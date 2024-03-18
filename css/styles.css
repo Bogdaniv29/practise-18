@@ -1,44 +1,103 @@
 .container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    outline: 1px solid red;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* header */
 
-.header{
-    padding: 30px;
+.header {
+  padding: 30px;
+  background-color: #000;
+  color: white;
+  background-image: linear-gradient(
+    to top,
+    rgba(2, 0, 36, 1) 28%,
+    rgba(0, 0, 255, 1) 46%,
+    rgba(252, 255, 0, 1) 74%,
+    rgba(49, 214, 247, 1) 100%
+  );
 }
 
 .header .container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
-    color: #000;
-font-family: "Raleway", sans-serif;
-font-size: 26px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.78px;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
 }
 .nav {
 }
 .nav__list {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 .nav__item {
 }
 .nav__item-link {
-    color: #212121;
-font-family: "Roboto", sans-serif;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.28px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+/* hero */
+
+.hero {
+  height: 100vh;
+  background: url(../images/spaceship-7102944_1280.png),
+    url(../images/earth.jpg);
+  background-repeat: no-repeat;
+  background-size: 200px, cover;
+  background-position: 85% 20%;
+}
+.hero__title {
+  color: #fff;
+}
+.hero__button {
+  display: block;
+  margin: 0 auto;
+  width: 216px;
+  height: 50px;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+}
+
+.hero__button:hover {
+  background-color: red;
+}
+
+.box__thumb {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  padding: 90px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box {
+  height: 190px;
+  width: calc(50% - 20px);
+  margin: 10px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
